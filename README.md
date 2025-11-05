@@ -1,22 +1,22 @@
-BookHub – Flutter + Firebase + Crossref API App
+# BookHub – Flutter + Firebase + Crossref API App
 
 BookHub is a modern Flutter-based mobile application that lets users explore, search, and manage books or scholarly works in one place.
 It integrates Firebase Authentication for secure user login/signup and the Crossref REST API for fetching real-time book and research data.
 
-Features
+# Features
 User Authentication (Firebase)
 
 Sign up, log in, and logout functionality
 
 Secure session management with FirebaseAuth
 
-Crossref API Integration
+# Crossref API Integration
 
 Fetches live book and research metadata
 
 Displays title, author, publisher, and DOI links
 
-Search Functionality
+# Search Functionality
 
 Dynamic search by book title or author
 
@@ -44,7 +44,8 @@ API	Crossref REST API
 HTTP Requests	http package
 External Links	url_launcher package
 State Management	Flutter Stateful Widgets
-App Structure
+
+# App Structure
 lib/
  ├── main.dart
  ├── screens/
@@ -64,7 +65,7 @@ lib/
  │
  └── firebase_options.dart
 
-Firebase Setup
+# Firebase Setup
 
 Create a new project in Firebase Console
 
@@ -80,14 +81,14 @@ await Firebase.initializeApp(
   options: DefaultFirebaseOptions.currentPlatform,
 );
 
-Crossref API Setup
+# Crossref API Setup
 
 No API key is required.
 Use this endpoint in your service:
 
 https://api.crossref.org/works?filter=has-full-text:true&mailto=GroovyBib@example.org
 
-Screens Overview
+# Screens Overview
 Onboarding Screen
 
 Introduction and navigation to login/signup screens.
@@ -106,7 +107,7 @@ Library – Search and explore publications
 
 Profile – Displays user info and logout option
 
-Future Enhancements
+# Future Enhancements
 
 Add Firestore for storing user favorites
 
@@ -118,7 +119,7 @@ Enable push notifications for new releases
 
 Add dark mode support
 
-Learning Outcomes
+# Learning Outcomes
 
 Integrating Firebase Authentication into Flutter apps
 
@@ -130,7 +131,7 @@ Structuring multi-screen navigation
 
 Combining cloud, API, and UI layers effectively
 
-How to Run
+# How to Run
 Clone the repository
 git clone https://github.com/your-username/bookhub.git
 cd bookhub
@@ -141,7 +142,7 @@ flutter pub get
 Run the app
 flutter run
 
-License
+# License
 
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute it for educational or personal purposes.
